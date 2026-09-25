@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 193, 7, 0.08),
+      transparent 30%
+    ),
+    #080808;
+}
+
+/* HEADER */
+
+.header {
+  height: 76px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1c1c1c;
+  background: rgba(8, 8, 8, 0.92);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+}
+
+.logo,
+.footerLogo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.logo span,
+.footerLogo span {
+  color: #ffc400;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 30px;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.desktopNav a:hover {
+  color: #ffc400;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchButton {
+  border: 0;
+  background: #171717;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.loginButton {
+  background: #ffc400;
+  color: #080808;
+  border: 0;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 620px;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 650px;
+}
+
+.badge,
+.eyebrow {
+  color: #ffc400;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 12px;
+  background: rgba(255, 196, 0, 0.1);
+  border: 1px solid rgba(255, 196, 0, 0.25);
+  border-radius: 30px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(50px, 7vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #ffc400;
+}
+
+.hero p {
+  max-width: 570px;
+  color: #a8a8a8;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border: 0;
+  border-radius: 9px;
+  padding: 14px 22px;
+  font-weight: 800;
+}
+
+.primaryButton {
+  background: #ffc400;
+  color: #080808;
+}
+
+.secondaryButton {
+  background: #1b1b1b;
+  color: white;
+}
+
+/* HERO VISUAL */
+
+.heroVisual {
+  width: 420px;
+  height: 430px;
+  position: relative;
+}
+
+.heroCircle {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  left: 70px;
+  top: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffc400, #ff7b00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #080808;
+  font-size: 130px;
+  font-weight: 900;
+  box-shadow: 0 0 100px rgba(255, 196, 0, 0.25);
+}
+
+.heroCard {
+  width: 190px;
+  height: 230px;
+  position: absolute;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  box-shadow: 0 20px 50px #000;
+  border: 1px solid #333;
+}
+
+.heroCard span {
+  font-size: 60px;
+  margin-bottom: auto;
+}
+
+.heroCard strong {
+  font-size: 18px;
+}
+
+.heroCard small {
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.cardOne {
+  left: 0;
+  top: 80px;
+  transform: rotate(-8deg);
+  background: linear-gradient(160deg, #4b164c, #111);
+}
+
+.cardTwo {
+  right: 0;
+  bottom: 
